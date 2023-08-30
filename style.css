@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200&family=Red+Hat+Display&display=swap");
+
+:root {
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --hover_color: hsl(225, 80%, 90%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Pale-blue);
+  overflow: hidden;
+  min-height: 100vh;
+}
+.container {
+  width: 375px;
+  height: 550px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.design_img {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.design_img img {
+  object-fit: contain;
+  width: 100%;
+}
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.9rem;
+}
+h1 {
+  font-weight: bolder;
+}
+p {
+  color: var(--Desaturated-blue);
+}
+.plan_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  margin: 1.5rem 1.5rem 0rem 1.5rem;
+
+}
+.plan_box:hover {
+  background-color: var(--hover_color);
+  border-radius: 0.5rem;
+}
+.music_box {
+  display: flex;
+}
+.plan_text {
+  margin-left: 0.9rem;
+}
+.change_text {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.change_text:hover {
+  color: #333;
+}
+
+.submition_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+.submition_box button {
+  width: 75%;
+  padding: 0.5rem;
+  border-radius: 0.7rem 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--Bright-blue);
+  color: var(--Pale-blue);
+  font-size: .9rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.submition_box button:hover{
+    background-color: var(--Desaturated-blue);
+  }
+
+  .cancel_text{
+    margin-top: .3rem;
+    cursor: pointer;
+  transition: all .5s ease-in-out;
+  }
+
+  .cancel_text:hover{
+  color: #333;
+  }
